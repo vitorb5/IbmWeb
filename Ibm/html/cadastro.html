@@ -15,42 +15,167 @@
 </head>
 <body>
   <header>
-    <h1>Cadastro Usuario</h1>
+    <h1>Agrotrabalho</h1>
   </header>
 
+
+
   <main>
-    <section class="texto">
+    <section class="texto cadastro">
+      <form class="form-cadastro" action="index.html" method="post">
 
-      <article>
+        <h2>Cadastro de Usuário</h2>
+
+        <h3 class="espaco">Informações pessoais</h3>
+        <hr>
 
         <div class="cadastro">
-          <label for=""> <strong>Nome:</strong> </label> <br/ >
-          <input type="text" name="name" id="name" value="Nome" >
+          <label for="name"> <strong>Nome:</strong> </label> <br/ >
+          <input type="text" name="name" id="name" placeholder="Digite aqui seu nome..." >
         </div>
 
         <div class="cadastro">
-          <label for=""> <strong>Telefone:</strong> </label> <br/ >
-          <input type="text" name="name" id="name" value="Nome" >
+          <label for="dataNascimento"> <strong>Data Nascimento:</strong> </label> <br/ >
+          <input type="date" name="dataNascimento" id="dataNascimento" placeholder="Data de Nascimento" >
         </div>
         <div class="cadastro">
-          <label for=""> <strong>Email:</strong> </label> <br/ >
-          <input type="text" name="name" id="name" value="Nome" >
+          <label for="email"> <strong>Email:</strong> </label> <br/ >
+          <input type="text" name="email" id="email" placeholder="Digite aqui seu email..." onchange="validaEmail(this)" >
         </div>
         <div class="cadastro">
-          <label for=""> <strong>Cpf:</strong> </label> <br/ >
-          <input type="text" name="name" id="name" value="Nome" >
+          <label for="cpf"> <strong>Cpf:</strong> </label> <br/ >
+          <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="Digite aqui seu cpf..."  onchange="validaCpf(this)" onclick="limpaCampo(this)">
         </div>
 
+        <div class="cadastro">
+          <label for="rg"> <strong>Rg:</strong> </label> <br/ >
+          <input type="text" name="rg" id="rg" placeholder="Digite aqui seu Rg..." >
+        </div>
 
-        <input type="submit" name="" value="Enviar">
+        <h3 class="espaco">Endereço</h3>
+        <hr>
 
-      </article>
+        <div class="cadastro">
+          <label for="cep"> <strong>Cep:</strong> </label> <br/ >
+          <input type="text" name="cep" id="cep" placeholder="Digite seu Cep..." >
+        </div>
 
+        <div class="cadastro">
+          <label for="logradouro"> <strong>Logradouro:</strong> </label> <br/ >
+          <input type="text" name="logradouro" id="logradouro" placeholder="Digite aqui seu logradouro..." >
+        </div>
+        <div class="cadastro">
+          <label for="bairro"> <strong>Bairro:</strong> </label> <br/ >
+          <input type="text" name="bairro" id="bairro" placeholder="Digite aqui seu bairro..." >
+        </div>
+        <div class="cadastro">
+          <label for="uf"> <strong>Uf:</strong> </label> <br>
+
+          <select name="uf" id="uf">
+            <option value="" disabled="" selected="">
+              UF
+            </option>
+            <option value="AC">
+              AC
+            </option>
+            <option value="AL">
+              AL
+            </option>
+            <option value="AP">
+              AP
+            </option>
+            <option value="AM">
+              AM
+            </option>
+            <option value="BA">
+              BA
+            </option>
+            <option value="CE">
+              CE
+            </option>
+            <option value="DF">
+              DF
+            </option>
+            <option value="ES">
+              ES
+            </option>
+            <option value="GO">
+              GO
+            </option>
+            <option value="MA">
+              MA
+            </option>
+            <option value="MS">
+              MS
+            </option>
+            <option value="MT">
+              MT
+            </option>
+            <option value="MG">
+              MG
+            </option>
+            <option value="PA">
+              PA
+            </option>
+            <option value="PB">
+              PB
+            </option>
+            <option value="PR">
+              PR
+            </option>
+            <option value="PE">
+              PE
+            </option>
+            <option value="PI">
+              PI
+            </option>
+            <option value="RJ">
+              RJ
+            </option>
+            <option value="RN">
+              RN
+            </option>
+            <option value="RS">
+              RS
+            </option>
+            <option value="RO">
+              RO
+            </option>
+            <option value="RR">
+              RR
+            </option>
+            <option value="SC">
+              SC
+            </option>
+            <option value="SE">
+              SE
+            </option>
+            <option value="TO">
+              TO
+            </option>
+          </select>
+        </div>
+        <div class="cadastro">
+          <label for="complemento"> <strong>Complemento:</strong> </label> <br/ >
+          <input type="text" name="complemento" id="complemento" placeholder="Digite aqui o complemento..." >
+        </div>
+
+        <div class="cadastro">
+          <input type="submit" name="" value="Enviar">
+        </div>
+
+      </form>
     </section>
   </main>
+
+
   <!-- Rodapé da pagina -->
   <footer>
     <p>&copy; Tech-ninjas - 2018</p>
   </footer>
+
+  <script type="text/javascript" src="../js/js.js">
+
+  </script>
 </body>
 </html>
