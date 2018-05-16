@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Login - IBM agro</title>
+<head>
+  <meta charset="utf-8">
+  <title>Login - IBM agro</title>
 
-    <meta http-equiv="pragma" content="no-cache">
-    <meta http-equiv="cache-control" content="no-cache">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta name="description" content="-">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta http-equiv="pragma" content="no-cache">
+  <meta http-equiv="cache-control" content="no-cache">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+  <meta name="description" content="-">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <!-- css -->
-    <link rel="stylesheet" href="css/css.css">
-  </head>
-  <body>
-    <!-- cabeçalho da pagina -->
-    <header>
-      <h1>AgroTrabalho</h1>
-    </header>
+  <!-- css -->
+  <link rel="stylesheet" href="css/css.css">
+</head>
+<body>
+  <!-- cabeçalho da pagina -->
+  <header>
+    <h1>AgroTrabalho</h1>
+  </header>
 
-    <main>
-      <section id="login">
-        <!-- conteudo principal, usuario e senha no caso -->
-        <div class="login">
-          <h2>Dados do usuário</h2>
-          <form>
-            <input type="text" placeholder="Login" name="" value="" />
-            <input type="password" placeholder="Senha" name="" value="" />
-            <input type="submit" class="entrar" name="" value="entrar">
-            <p><a href="#">Esqueci a senha</a> <br/>
-              <a href="html\cadastro.html">É novo? Cadastre-se aqui</a></p>
+  <main>
+    <section id="login">
+      <!-- conteudo principal, usuario e senha no caso -->
+      <div class="login">
+        <h2>Dados do usuário</h2>
+        <form>
+          <input type="text" placeholder="Login" name="user" id="user" value="" />
+          <input type="password" placeholder="Senha" name="senha" id="senha" value="" />
+          <a class="entrar" name="" value="entrar" onclick="login()">entrar</a>
+          <p><a href="#">Esqueci a senha</a> <br/>
+            <a href="html\cadastro.html">É novo? Cadastre-se aqui</a></p>
           </form>
         </div>
         <!-- Após ele realizar o login, devera ser guiado para alguma pagina -->
@@ -39,8 +39,8 @@
     <footer>
       <p>&copy; Tech-ninjas - 2018</p>
     </footer>
+    <script type="text/javascript" src="js/js.js"></script>
+    </body>
+    </html>
 
-  </body>
-</html>
-
-<!-- Esta vai ser a tela de login do sistema -->
+    <!-- Esta vai ser a tela de login do sistema -->

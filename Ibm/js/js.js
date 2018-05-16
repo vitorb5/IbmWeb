@@ -29,3 +29,12 @@ function validaEmail(){
 function limpaCampo(el) {
   el.classList.remove("erro");
 }
+
+function login(){
+  var login =document.querySelector("#user").value
+  var senha = document.querySelector("#senha").value;
+
+  if(login == 'login' && senha == 'senha'){
+    location.href = "html/terreno.html";
+  }
+}
